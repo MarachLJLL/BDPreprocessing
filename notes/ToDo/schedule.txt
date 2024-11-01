@@ -1,0 +1,38 @@
+Legend:
+    - BE = backend
+    - FE = frontend
+Sprint info:
+    - 1 week per Sprint
+    - Capacity noted for each sprint (days of effort)
+Sprints:
+1. Nov 4 - 8: 
+2. Nov 11 - 15
+3. Nov 18 - 22
+4. Nov 25 - 29
+5. Dec 2 - 6
+6. Dec 9 - 13
+7. Dec 16 - 20
+
+Backlog:
+- 
+
+Features:
+Layout:
+    - Feature
+        - Story (points)
+            - Details
+- Plan class structure and interfaces
+    - Divide requirements below into classes
+    - Set up relationships
+- Plan front end UI (1)
+    - How blocks will merge together 
+    - How blocks will be selected
+    - Where files will be uploaded
+    - Where presets will be stored
+- Excel handling
+    - Convert all Excel files to CSV or some other form of database
+- Create excel to database file type presets
+    - PreviousBD
+    - ManagerMapping
+        - Actuals/RMT
+        - VMS File
