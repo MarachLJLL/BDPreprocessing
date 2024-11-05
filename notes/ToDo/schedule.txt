@@ -34,5 +34,6 @@ Layout:
 - Create excel to database file type presets
     - PreviousBD
     - ManagerMapping
-        - Actuals/RMT
-        - VMS File
+    - Actuals/RMT
+    - VMS File
+
