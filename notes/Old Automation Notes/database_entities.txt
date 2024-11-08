@@ -1,0 +1,22 @@
+Entities and attributes
+    Populating rows
+        - Transit
+        - Month
+        - LoB
+            - Resources
+        - Resource
+            - Name + Month
+            - Resource ID
+        
+    Mappings
+        - Manager
+            - Role
+        - Accounts (all have a list of numbers)
+            - Cap
+            - Exp
+            - Accr
+            - Ongoing
+            - Other
+
+Mappings
+
