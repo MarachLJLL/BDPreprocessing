@@ -16,12 +16,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-import debug_toolbar
+# import debug_toolbar
 import home_page
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('playground/', include('playground.urls')), # will get playground/* and send * to the url config module in the playground app
-    path('__debug __/', include (debug_toolbar.urls)),
+    # path('__debug __/', include (debug_toolbar.urls)),
     path('', include('home_page.urls'))
 ]
