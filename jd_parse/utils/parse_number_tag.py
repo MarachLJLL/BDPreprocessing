@@ -1,12 +1,12 @@
 import re
-from abs_parser import JDParser
+from jd_parse.utils.abs_parser import JDParser
 
-class InvoiceParserFactory():
+class NumberTagParserFactory():
     @staticmethod
     def get_invoice_parser(length=None, prefix="", suffix=""):
-        num_len = '[0-9]+' if length == None else pattern = '[0-9]{' + str(length) + '}'
+        num_len = '[0-9]+' if length == None else '[0-9]{' + str(length) + '}'
         pattern = prefix + num_len + suffix
-        InvoiceParser = type('AnonymousJDParser', (JDParser), {
+        InvoiceParser = type('NumberTagParser', (JDParser,), {
             'parse': lambda jd: re.search(pattern, jd).group()
         })
         return InvoiceParser

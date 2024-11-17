@@ -1,4 +1,4 @@
-from abs_parser import JDParser
+from jd_parse.utils.abs_parser import JDParser
 import re
 from datetime import datetime
   
@@ -30,12 +30,7 @@ class DateParser(JDParser):
         if matches:
             last_match = matches[-1]  # Get the last match
             output = last_match.groups()  # Capture month and year suffix
-            print("Matched date:", output)
             jd_date = DateParser.convert_datetime(output)
             return jd_date
         else:
-            print("No valid date found")
             return None
-
-if __name__ == "__main__":
-    print(DateParser.parse('Jan-1122 Dec-12'))  # Test with multiple dates to get the last one
